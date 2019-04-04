@@ -19,13 +19,13 @@
       },
       "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
-      "ami_name": "Nodejs {{timestamp}}"
+      "ami_name": "Nodejs"
     }],
     "provisioners": [{
        "type": "shell",
        "script": "install_ansible.sh"
     }, {
         "type": "ansible",
-        "playbook_file": "nodejs.yml"
+        "playbook_file": "playbook.yml"
     }]
   }

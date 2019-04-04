@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 function install_ansible() {
     sudo apt-get update
     sudo apt-get install software-properties-common -y
