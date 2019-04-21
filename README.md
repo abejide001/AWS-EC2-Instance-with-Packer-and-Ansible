@@ -7,13 +7,35 @@ A project using packer to build an image and ansible for configuration managemen
 - Create an account on aws, if you don't have one
 - Select Services from the menu bar and click on `IAM(Identity Access Management)` which is under Security, Identity, & Compliance
 - Select User and add a user by entering the username, this will be enable to get an access and a secret key
-- Ensure you have packer installed by running the command on the terminal ```packer -v```
+- Ensure you have packer installed by running the command on the terminal 
+```bash
+$ packer -v
+```
 - Clone the github repository
 - Copy the content of the .env.sample file(aws_access_key and aws_secret_key)
-- Export the variables in the terminal by running the command ```export aws_access_key=myaccesskey``` and ```export aws_secret_key=mysecretkey```
-- To confirm the variables are in the environment, run the command ```env```, it will display the variables
-- Run the command ```packer validate packer.json``` to validate the packer.json
-- Run the command ```packer build packer.json``` to build the image, this will take a while to run, once this is successful, you will see the AMI name and id on the terminal
+- Export the variables in the terminal by running the command 
+```bash 
+$ export aws_access_key=myaccesskey
+``` 
+and 
+```bash 
+$ export aws_secret_key=mysecretkey
+```
+- To confirm the variables are in the environment, run the command 
+```bash 
+$ env
+```
+it will display the variables
+- Run the command 
+```bash
+$ packer validate packer.json
+``` 
+to validate the packer.json
+- Run the command 
+```bash 
+$ packer build packer.json
+``` 
+to build the image, this will take a while to run, once this is successful, you will see the AMI name and id on the terminal
 - After successfully running the command, go to your dashboard on aws, under images, check AMIs you will see the the image that was just being created
 - Select the image, and launch it
 - Select an instance type, `it is advisable to select the t2micro type`
