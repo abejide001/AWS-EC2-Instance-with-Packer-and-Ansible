@@ -43,7 +43,7 @@ to build the image, this will take a while to run, once this is successful, you 
 - Add storage for the instance
 - Add tags 
 - Configure the security group by selecting `existing security group` or `create a new security group`, when creating a security make sure you add your application port so you access your application on your browser
-- Also create a key-value pair by selecting `create new key-pair` if you don't have one, so you can get RSA Key that will enable you SSH into the instance or select `choose existing key-pair` in the dropdown if you have already created one, you can also proceed without a key pair
+- Also create a key-value pair by selecting `create new key-pair`, enter the `key-pair` name, and download the `key-pair` if you don't have one, so you can get RSA Key that will enable you SSH into the instance or select `choose existing key-pair` in the dropdown if you have already created one, you can also proceed without a key pair
 - After the instance is created, select the instance and scroll to the bottom of the page, by the bottom right, you will see the public IP address e.g ```3.16.154.225```
 - Go to the terminal and ssh into the instance by running the command ```ssh -i demo-packer.pem.txt ubuntu@3.16.154.225```, demo-packer.pem.txt representing where the key is store.
 - Now you can access the application via the IP `3.16.154.225`
