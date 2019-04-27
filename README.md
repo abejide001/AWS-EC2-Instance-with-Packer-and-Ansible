@@ -58,14 +58,16 @@ to build the image, this will take a while to run, once this is successful, you 
 <img width="1425" alt="Screenshot 2019-04-27 at 8 47 05 PM" src="https://user-images.githubusercontent.com/6943256/56854431-54956600-692e-11e9-9b2e-a9462558b391.png">
 
 - Click on the Add rule, and select the `type`, add the `port range`, **ensure you add your appplication port**, so you can access it via the browser
+
 7. Review the instance, ensure you supplied the right details
 <img width="1422" alt="Screenshot 2019-04-27 at 8 56 11 PM" src="https://user-images.githubusercontent.com/6943256/56854520-e9e52a00-692f-11e9-9ea2-4b015578eaa7.png">
 
 Now we are almost done 😌
-<img width="696" alt="Screenshot 2019-04-27 at 9 04 21 PM" src="https://user-images.githubusercontent.com/6943256/56854538-29137b00-6930-11e9-99b2-2ee3b29b7d7d.png">
-
  - Create a key-value pair by selecting `create new key-pair`, enter the `key-pair` name, and download the `key-pair` to your machine if you don't have one, so you can get RSA Key that will enable you SSH into the instance or select `choose existing key-pair` in the dropdown if you have already created one, you can also proceed without a key pair, click on the **launch instance** button, this will take about 2mins for the instance to be ready
+ <img width="696" alt="Screenshot 2019-04-27 at 9 04 21 PM" src="https://user-images.githubusercontent.com/6943256/56854538-29137b00-6930-11e9-99b2-2ee3b29b7d7d.png">
+ 
 - After the instance is created, select the instances on the **EC2 dashboard** 
+
 - Select the instance that you just created 
 <img width="473" alt="Screenshot 2019-04-27 at 9 12 02 PM" src="https://user-images.githubusercontent.com/6943256/56854611-3aa95280-6931-11e9-9920-f82e5bde7fec.png">
 
