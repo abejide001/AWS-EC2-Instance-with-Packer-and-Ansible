@@ -77,6 +77,9 @@ Now we are almost done 😌
 - Go to the terminal and ssh into the instance by running the command ```ssh -i demo-packer.pem.txt ubuntu@3.16.154.225```, `demo-packer.pem.txt` representing where the key is store.
 - Now you can access the application via the IP `3.16.154.225`
 
+**PS**
+Don't forget to stop the instance, when not in use, to prevent charges from amazon
+
 ## Built With
 - [Packer](https://www.packer.io/)
 - [Ansible](https://www.ansible.com/) - Configuration management tool
