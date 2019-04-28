@@ -57,7 +57,7 @@ to build the image, this will take a while to run, once this is successful, you 
 6. Configure the security group by selecting `create a new security group`, or select `existing security group`
 <img width="1425" alt="Screenshot 2019-04-27 at 8 47 05 PM" src="https://user-images.githubusercontent.com/6943256/56854431-54956600-692e-11e9-9b2e-a9462558b391.png">
 
-- Click on the Add rule, and select the `type`, add the `port range`, **ensure you add your appplication port**, so you can access it via the browser
+- Click on the Add rule, and select the `type - custom TCP rule`, add the `port range`, **ensure you add the appplication port**, `port - 3000` so you can access it via the browser, also choose the source to be `custom` and `0.0.0.0/0`(allow all traffic)
 
 7. Review the instance, ensure you supplied the right details
 <img width="1422" alt="Screenshot 2019-04-27 at 8 56 11 PM" src="https://user-images.githubusercontent.com/6943256/56854520-e9e52a00-692f-11e9-9ea2-4b015578eaa7.png">
